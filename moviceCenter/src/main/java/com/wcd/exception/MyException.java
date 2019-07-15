@@ -5,7 +5,7 @@ package com.wcd.exception;
  * @author wcd
  * @date 2019 7 1
  */
-public class MyExecption extends Exception{
+public class MyException extends Exception{
 
 
     /**错误码*/
@@ -14,7 +14,7 @@ public class MyExecption extends Exception{
     /**错误的信息*/
     private String message;
 
-     public MyExecption(ErrorEmun errorEmun){
+     public MyException(ErrorEmun errorEmun){
          this.errorCode = errorEmun.errorCode;
          this.message = errorEmun.message;
      }
