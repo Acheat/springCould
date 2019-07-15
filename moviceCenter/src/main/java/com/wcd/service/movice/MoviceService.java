@@ -3,7 +3,7 @@ package com.wcd.service.movice;
 import com.wcd.entity.Movice;
 import com.wcd.entity.MoviceType;
 import com.wcd.exception.ErrorEmun;
-import com.wcd.exception.MyExecption;
+import com.wcd.exception.MyException;
 import com.wcd.repository.MoviceRepository;
 import com.wcd.repository.MoviceTypeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -70,11 +70,11 @@ public class MoviceService implements  MoviceServiceInterface{
     }
 
     @Override
-    public Page findMoviceByMoviceTypeAndChildeType(Integer moviceTypes,Integer page,String order) throws MyExecption {
+    public Page findMoviceByMoviceTypeAndChildeType(Integer moviceTypes,Integer page,String order) throws  MyException {
 
         MoviceType moviceType = moviceTypeRepository.getOne(moviceTypes);
         if(moviceType == null){
-            throw  new MyExecption(ErrorEmun.MoviceTypeNotFound);
+            throw  new MyException(ErrorEmun.MoviceTypeNotFound);
         }
 
         Sort sort = Sort.by(order);

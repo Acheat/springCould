@@ -1,9 +1,9 @@
-package fileUpLocad.handle;
+package fileupload.handle;
 
 
-import fileUpLocad.entity.HtmlJson;
-import fileUpLocad.exception.ErrorEmun;
-import fileUpLocad.exception.MyExecption;
+import fileupload.entity.HtmlJson;
+import fileupload.exception.ErrorEmun;
+import fileupload.exception.MyExecption;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

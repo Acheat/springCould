@@ -1,4 +1,4 @@
-package fileUpLocad.exception;
+package fileupload.exception;
 
 /***
  * 系统的异常枚举对象

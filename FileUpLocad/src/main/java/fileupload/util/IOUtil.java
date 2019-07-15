@@ -1,4 +1,4 @@
-package fileUpLocad.util;
+package fileupload.util;
 
 /***
  * 文件赋值工具类

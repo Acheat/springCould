@@ -1,7 +1,8 @@
 package com.wcd.handle;
 
 import com.wcd.entity.HtmlJson;
-import com.wcd.exception.MyExecption;
+
+import com.wcd.exception.MyException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -24,8 +25,8 @@ public class ErrorHandle {
     @ResponseBody
     public HtmlJson handle(Exception e){
 
-        if(e instanceof MyExecption){
-            MyExecption myExecption = (MyExecption) e;
+        if(e instanceof MyException){
+            MyException myExecption = (MyException) e;
             errorJson.setErrcode(myExecption.getErrorCode());
             errorJson.setErrorMessaage(myExecption.getMessage());
 

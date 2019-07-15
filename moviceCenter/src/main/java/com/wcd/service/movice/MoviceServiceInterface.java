@@ -1,7 +1,7 @@
 package com.wcd.service.movice;
 
 import com.wcd.entity.Movice;
-import com.wcd.exception.MyExecption;
+import com.wcd.exception.MyException;
 import org.springframework.data.domain.Page;
 
 import java.io.IOException;
@@ -41,7 +41,7 @@ public interface MoviceServiceInterface {
      * @param order
      * @return
      */
-    public Page findMoviceByMoviceTypeAndChildeType(Integer moviceTypes,Integer pageRequest,String order) throws MyExecption;
+    public Page findMoviceByMoviceTypeAndChildeType(Integer moviceTypes,Integer pageRequest,String order) throws MyException;
 
     /***
      * 超级查询，

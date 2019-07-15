@@ -1,4 +1,4 @@
-package fileUpLocad.util.fileSave;
+package fileupload.util.filesave;
 
 import java.io.IOException;
 import java.io.InputStream;

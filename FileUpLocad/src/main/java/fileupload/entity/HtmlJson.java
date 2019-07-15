@@ -1,4 +1,4 @@
-package fileUpLocad.entity;
+package fileupload.entity;
 
 import org.springframework.stereotype.Component;
 
