@@ -1,0 +1,11 @@
+server:
+  port: 58799
+spring:
+  application:
+    name: provide
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true

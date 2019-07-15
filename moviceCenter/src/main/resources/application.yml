@@ -1,0 +1,27 @@
+server:
+  port: 57777
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+     defaultZone: http://localhost:8761/eureka/
+spring:
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  datasource:
+    username: root
+    password: qq123456
+    url: jdbc:mysql://localhost:3306/movice?characterEncoding=utf8&&serverTimezone=Asia/Shanghai
+
+  jackson:
+   serialization:
+    write-dates-as-timestamps: true
+wcd:
+  page:
+  pagesize: 10

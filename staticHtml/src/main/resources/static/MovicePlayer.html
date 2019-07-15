@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="https://cdn.bootcss.com/dplayer/1.25.0/DPlayer.min.css"></link>
+<script src="https://cdn.bootcss.com/dplayer/1.25.0/DPlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
+
+<style>
+
+    .movice{
+        width:960px;
+        height: 600px;
+        margin: 0px auto;
+    }
+</style>
+
+<body>
+<div class="movice">
+    <div id="dplayer"></div>
+</div>
+
+</body>
+
+<script>
+    var dp = new DPlayer({
+        container: document.getElementById('dplayer'),
+        video: {
+            quality: [{
+                name: 'HD',
+                url: 'https://vodpub2.v.news.cn/original/20190701/c409d0dadab6493196f1b2bfb8cc8264.mp4',
+                type: 'hls'
+            }, {
+                name: 'SD',
+                url: 'https://vodpub2.v.news.cn/original/20190701/c409d0dadab6493196f1b2bfb8cc8264.mp4',
+                type: 'normal'
+            }],
+            defaultQuality: 0,
+            pic: 'http://n.sinaimg.cn/photo/700/w1000h500/20190628/828b-hyzpvir7614537.jpg',
+
+        },
+    });
+
+</script>
+</html>
